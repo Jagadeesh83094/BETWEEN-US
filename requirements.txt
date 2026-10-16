@@ -1,0 +1,6 @@
+# BETWEEN US — The Meaning Mirror
+# Python 3.11+ (tested on 3.12)
+
+streamlit>=1.40,<2.0        # st.audio_input requires >=1.38; tested on 1.66
+python-dotenv>=1.0,<2.0
+sarvamai>=0.1.37            # official Sarvam AI Python SDK (tested on 0.1.37)
