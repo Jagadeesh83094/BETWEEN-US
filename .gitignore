@@ -1,0 +1,28 @@
+# Environment variables & secrets (CRITICAL: never commit API keys)
+.env
+.env.local
+*.env
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Python cache & artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Streamlit temporary data
+.streamlit/secrets.toml
+
+# IDE & OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db

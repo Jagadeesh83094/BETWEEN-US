@@ -1,0 +1,229 @@
+/* BETWEEN US — The Meaning Mirror Stylesheet */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Lora:ital,wght@0,500;0,600;1,400&display=swap');
+
+:root {
+  --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Lora', Georgia, serif;
+  
+  --bg-gradient: linear-gradient(135deg, #0d1117 0%, #161b22 50%, #0f172a 100%);
+  --card-bg: rgba(22, 27, 34, 0.75);
+  --card-border: rgba(255, 255, 255, 0.08);
+  
+  --person-a-accent: #f59e0b;
+  --person-a-bg: rgba(245, 158, 11, 0.08);
+  --person-a-border: rgba(245, 158, 11, 0.3);
+  
+  --person-b-accent: #38bdf8;
+  --person-b-bg: rgba(56, 189, 248, 0.08);
+  --person-b-border: rgba(56, 189, 248, 0.3);
+  
+  --mirror-purple: #a855f7;
+  --mirror-bg: rgba(168, 85, 247, 0.08);
+  --mirror-border: rgba(168, 85, 247, 0.3);
+  
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --text-bright: #ffffff;
+}
+
+/* Global Container Tweaks */
+.main .block-container {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  max-width: 960px;
+  font-family: var(--font-main);
+}
+
+/* Header & Typography */
+.hero-header {
+  text-align: center;
+  padding: 1.5rem 0 2rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 2rem;
+}
+
+.hero-title {
+  font-family: var(--font-main);
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 50%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #38bdf8;
+  margin-bottom: 0.75rem;
+}
+
+.hero-description {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* Glass Cards */
+.mirror-card {
+  background: rgba(30, 41, 59, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+.divergence-card {
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.12) 0%, rgba(56, 189, 248, 0.08) 100%);
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  border-radius: 18px;
+  padding: 1.75rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 12px 30px -5px rgba(168, 85, 247, 0.15);
+}
+
+.divergence-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #e9d5ff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.moment-quote {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  color: #ffffff;
+  padding: 0.75rem 1rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-left: 4px solid var(--mirror-purple);
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+/* Side by Side Perspective Cards */
+.perspective-card-a {
+  background: var(--person-a-bg);
+  border: 1px solid var(--person-a-border);
+  border-radius: 14px;
+  padding: 1.25rem;
+  height: 100%;
+}
+
+.perspective-card-b {
+  background: var(--person-b-bg);
+  border: 1px solid var(--person-b-border);
+  border-radius: 14px;
+  padding: 1.25rem;
+  height: 100%;
+}
+
+.badge-a {
+  display: inline-block;
+  background: rgba(245, 158, 11, 0.2);
+  color: #fbbf24;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.6rem;
+  border-radius: 20px;
+  margin-bottom: 0.75rem;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+}
+
+.badge-b {
+  display: inline-block;
+  background: rgba(56, 189, 248, 0.2);
+  color: #7dd3fc;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.6rem;
+  border-radius: 20px;
+  margin-bottom: 0.75rem;
+  border: 1px solid rgba(56, 189, 248, 0.4);
+}
+
+.badge-hypothesis {
+  display: inline-block;
+  background: rgba(148, 163, 184, 0.15);
+  color: #cbd5e1;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  margin-bottom: 0.5rem;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+/* Ambiguous Phrase Item */
+.phrase-box {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.phrase-term {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fde047;
+  font-family: var(--font-serif);
+}
+
+/* Notice banners */
+.privacy-notice {
+  font-size: 0.82rem;
+  color: #94a3b8;
+  background: rgba(30, 41, 59, 0.4);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  margin-top: 1.5rem;
+}
+
+.counselling-alert {
+  font-size: 0.85rem;
+  color: #cbd5e1;
+  background: rgba(59, 130, 246, 0.08);
+  border-left: 3px solid #60a5fa;
+  padding: 0.6rem 0.9rem;
+  border-radius: 4px;
+  margin-bottom: 1.25rem;
+}
+
+/* Pass the phone transition */
+.pass-device-screen {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  background: radial-gradient(circle at center, rgba(56, 189, 248, 0.1) 0%, transparent 70%);
+  border-radius: 20px;
+  border: 1px dashed rgba(56, 189, 248, 0.3);
+  margin: 2rem 0;
+}
+
+.pass-device-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.9; }
+  50% { transform: scale(1.08); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.9; }
+}
